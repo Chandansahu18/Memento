@@ -498,7 +498,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   CapturedPhotoPreviewContainer: {
-    backgroundColor: "white",
     width: "90%",
     height: "55%",
     alignItems: "center",
@@ -549,7 +548,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   VideoPreviewContainer: {
-    backgroundColor: "white",
     width: "85%",
     height: "100%",
     justifyContent: "center",
