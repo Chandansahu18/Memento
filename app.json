@@ -12,16 +12,41 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Memento needs access to your Camera.",
+        "NSMicrophoneUsageDescription": "Memento needs access to your Microphone."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.chandansahu310702.Memento"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "Memento needs access to your Camera.",
+          "enableMicrophonePermission": true,
+          "microphonePermissionText": "Memento needs access to your Microphone."
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "18c1e8f3-a54c-487a-882a-ffe2b3e0034f"
+      }
     }
   }
 }
